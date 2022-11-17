@@ -2,7 +2,7 @@
 
 ![](log4shell-finder-mswin.png)
 
-Python port of https://github.com/mergebase/log4j-detector log4j-detector is copyright (C) Copyright 2021 Mergebase Software Inc. https://mergebase.com/  Licensed via GPLv3.
+Python port of https://github.com/trhacknon/log4j-detector log4j-detector is copyright (C) Copyright 2021 Mergebase Software Inc. https://mergebase.com/  Licensed via GPLv3.
 
 > *Motivation for porting to Python was to improve perfomance, reduce memory consumption and increase code readability. See below section about [performance](#performance) comparism.*
 > 
@@ -75,7 +75,7 @@ Maximum resident set size (kbytes): 81616
 File system inputs: 968
 ```
 
-### log4j-detector (https://github.com/mergebase/log4j-detector)
+### log4j-detector (https://github.com/trhacknon/log4j-detector)
 ```yaml
 Command being timed: "java -jar log4j-detector-latest.jar /home/hynek/war"
 User time (seconds): 30.56
@@ -86,7 +86,7 @@ Maximum resident set size (kbytes): 214116
 File system inputs: 14416
 ```
 
-### log4j2-scan (https://github.com/logpresso/CVE-2021-44228-Scanner)
+### log4j2-scan (https://github.com/trhacknon/CVE-2021-44228-Scanner)
 ```yaml
 Command being timed: "./log4j2-scan /home/hynek/war --scan-log4j1 --scan-zip"
 User time (seconds): 52.05
@@ -203,7 +203,7 @@ PS C:\D\log4shell_finder> python3 .\test_log4shell.py c:\ --same-fs --no-errors
  8 `YooP' `YooP8     8  `YooP' 8    8 `Yooo' 8 8        8    8 8   8 `YooP' `Yooo' 8
  ..:.....::....8 ::::..::.....:..:::..:.....:....:::::::..:::....::..:.....::.....:..::::
  :::::::::::ooP'.:::::::::::::::::::::::::::::::::   Version 1.17-20220105   ::::::::::::
- :::::::::::...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ :::::::::::...::::::::::::::BY Trhacknon::::::::::::::::::::::::::::::::::::::::::::::::
 
  Parameters: .\test_log4shell.py c:\ --same-fs --no-errors
  Host info: 'hostname': 'TESTHOST', 'fqdn': 'TESTHOST.example.com', 'ip': '10.0.0.1', 'system': 'Windows', 'release': '10', 'version': '10.0.19043', 'machine': 'AMD64', 'cpu': 'Intel64 Family 6 Model 142 Stepping 12, GenuineIntel'
@@ -233,7 +233,7 @@ root@kali:/home/hynek/log4shell-finder# python3 test_log4shell.py / --same-fs --
  8 `YooP' `YooP8     8  `YooP' 8    8 `Yooo' 8 8        8    8 8   8 `YooP' `Yooo' 8
  ..:.....::....8 ::::..::.....:..:::..:.....:....:::::::..:::....::..:.....::.....:..::::
  :::::::::::ooP'.:::::::::::::::::::::::::::::::::   Version 1.18-20220106   ::::::::::::
- :::::::::::...::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ :::::::::::...By Trhacknon::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
  Parameters: test_log4shell.py / --same-fs --no-errors --progress 1 --exclude-dirs /usr/share/seclists/Payloads/Zip-Bombs/
  Host info: 'hostname': 'kali', 'fqdn': 'kali', 'ip': '10.0.0.2', 'system': 'Linux', 'release': '5.14.0-kali4-amd64', 'version': '#1 SMP Debian 5.14.16-1kali1 (2021-11-05)', 'machine': 'x86_64', 'cpu': ''
